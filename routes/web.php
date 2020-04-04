@@ -59,10 +59,13 @@ Route::get('/test3/{abc}', function($abc) {
       ]);
 });
 
-
-
 Route::get('/test4/{abc}', 'TestsController@show'); //<- тоже самое что и в test3, только выполнено через контроллер
 
+
+
+//=============================
+//=============================
+Route::get('/posts/{abc}', 'PostsController@show'); 
 
 
 
